@@ -148,20 +148,43 @@ html, body {
 .countdown {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 1.2rem;
-  font-family: var(--font-serif);
-  font-size: 2.1rem;
-  color: #fff;
-  margin: 1.2rem 0 1.2rem 0;
-  letter-spacing: 2px;
-  font-weight: 700;
-  text-shadow: 0 2px 8px rgba(24,21,17,0.18);
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
-.countdown span {
-  min-width: 2.2rem;
-  display: inline-block;
-  text-align: center;
+
+.countdown > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+}
+
+.countdown > div span {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.countdown > div div {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 0.2rem;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 600px) {
+  .countdown {
+    gap: 1rem;
+  }
+
+  .countdown > div span {
+    font-size: 1.6rem;
+  }
+
+  .countdown > div div {
+    font-size: 0.8rem;
+  }
 }
 
 .copyright-bar {
