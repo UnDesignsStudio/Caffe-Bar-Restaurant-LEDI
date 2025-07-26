@@ -90,7 +90,7 @@ if (jobForm) {
       `Message: ${message}\n` +
       `CV: [Please attach your CV manually]`
     );
-    window.location.href = `mailto:info@youragency.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:ledi.k3blok@gmail.com?subject=${subject}&body=${body}`;
     // Show animated success message
     showFormSuccess();
   });
