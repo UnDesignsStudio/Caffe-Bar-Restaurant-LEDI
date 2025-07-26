@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caffe & Bar Restaurant LEDI</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/logo-icon.png" />
+  <link rel="shortcut icon" type="image/png" href="img/logo-icon.png" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Cormorant+Garamond:700|Poppins:400,700|Inter:400,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Fixed Transparent Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container" style="justify-content: center;">
+      <div class="logo">
+        <!-- Updated logo image -->
+        <img src="img/logo-icon.png" alt="Logo" />
+      </div>
+    </div>
+  </nav>
+
+  <!-- Language Switcher -->
+  <div class="language-switcher">
+    <button id="lang-en" class="lang-btn active" data-lang="en">EN</button>
+    <button id="lang-sr" class="lang-btn" data-lang="sr">SR</button>
+  </div>
+
+  <!-- Fullscreen Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-overlay">
+      <h1 class="hero-title" data-translate="heroTitle">COMING SOON</h1>
+      <!-- Countdown Clock -->
+      <div class="countdown" id="countdown">
+        <span id="days">00</span>d :
+        <span id="hours">00</span>h :
+        <span id="minutes">00</span>m :
+        <span id="seconds">00</span>s
+      </div>
+      <h2 class="hero-subtitle" data-translate="heroSubtitle">COMING SOON</h2>
+      <p class="hero-desc" data-translate="heroDesc">
+        Uskoro će biti otvoren LEDI Caffe & Bar Restaurant u blizini K3 Bloka.
+      </p>
+    </div>
+  </section>
+
+  <!-- Job Application Section -->
+  <section id="jobs" class="jobs-section">
+    <div class="form-animate">
+      <h3 data-translate="joinTitle">Join Our Team</h3>
+      <form id="job-form" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="fullname" data-translate="fullName">Full Name</label>
+          <input type="text" id="fullname" name="fullname" required />
+        </div>
+        <div class="form-group">
+          <label for="email" data-translate="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="position" data-translate="position">Position</label>
+          <select id="position" name="position" required>
+            <option value="Waiter" data-translate="waiter">Waiter</option>
+            <option value="Chef" data-translate="chef">Chef</option>
+            <option value="Barista" data-translate="barista">Barista</option>
+            <option value="Other" data-translate="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message" data-translate="message">Message</label>
+          <textarea id="message" name="message" rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="cv" data-translate="uploadCV">Upload CV (PDF/DOC)</label>
+          <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" />
+        </div>
+        <button type="submit" class="submit-btn" data-translate="sendApplication">
+          Send Application
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Minimal Copyright -->
+  <div class="copyright-bar" data-translate="copyright">
+    © 2025 UN Design.
+  </div>
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
